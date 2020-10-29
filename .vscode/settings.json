@@ -1,0 +1,14 @@
+{
+  "files.associations": {
+    ".prettierrc": "yaml",
+  },
+  "javascript.format.insertSpaceAfterConstructor": true,
+  "javascript.preferences.importModuleSpecifier": "relative",
+  "typescript.format.insertSpaceAfterConstructor": true,
+  "typescript.format.insertSpaceAfterOpeningAndBeforeClosingNonemptyBraces": false,
+  "typescript.format.insertSpaceAfterTypeAssertion": true,
+  "typescript.preferences.importModuleSpecifier": "non-relative",
+  "typescript.tsdk": "node_modules/ttypescript/lib",
+  "vsicons.associations.files": [],
+  "vsicons.associations.folders": [],
+}
