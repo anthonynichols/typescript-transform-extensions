@@ -40,5 +40,5 @@ describe('Transformer', () => {
     test('when no file extension is given in the import', () => {
       expect(transformedEsmFiles['main.ts'].js).toBe(expected['main.esm']);
     });
-  })
+  });
 });

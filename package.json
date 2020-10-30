@@ -32,6 +32,7 @@
   "scripts": {
     "build": "tsc",
     "build-tests": "tsc -p \"./tests/fixtures/tsconfig.json\"",
+    "clean": "rm -rf lib tsconfig.tsbuildinfo",
     "format": "prettier --write \"{src,tests}/**/*.{js,ts}\"",
     "release:major": "npm version major && npm publish",
     "release:minor": "npm version minor && npm publish",

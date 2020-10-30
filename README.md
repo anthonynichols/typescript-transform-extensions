@@ -5,7 +5,7 @@
 
 Transforms imports to include the file extension of the resolved import, [necessary for ES Modules](https://nodejs.org/api/esm.html#esm_mandatory_file_extensions).
 
-> Helpful to go along with [typescript-transform-paths](https://www.npmjs.com/package/typescript-transform-paths). This plugin was inspired by [typescript-transform-paths](https://www.npmjs.com/package/typescript-transform-paths), thank you for all of your hard work!
+> This TypeScript plugin is helpful along with [typescript-transform-paths](https://www.npmjs.com/package/typescript-transform-paths). This plugin was inspired by [typescript-transform-paths](https://www.npmjs.com/package/typescript-transform-paths), thank you for all of your hard work!
 
 ## Usable with [ttypescript](https://github.com/cevek/ttypescript/) or [ts-patch](https://github.com/nonara/ts-patch)
 
@@ -71,7 +71,7 @@ export function sum2(first: number, second: number) {
 `src/subdir/main.ts`
 
 ```ts
-import {sum} from "../path/to/import/file";
+import {sum2} from "../path/to/import/file";
 
 sum2(2, 3);
 ```

@@ -125,7 +125,7 @@ export default function transformer(program: ts.Program, config: TsTransformExte
 
         if (!_path) return original;
 
-        _path = _path[0] === "." ? _path : `./${_path}`;
+        _path = _path[0] === '.' ? _path : `./${_path}`;
       }
 
       return updaterFn(ts.createLiteral(_path));
