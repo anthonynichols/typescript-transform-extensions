@@ -1,6 +1,6 @@
 {
   "name": "typescript-transform-extensions",
-  "version": "1.0.0",
+  "version": "0.0.0",
   "description": "Transforms import and export extensions for compatibility with native ES Modules",
   "keywords": [
     "typescript",
@@ -31,20 +31,27 @@
   ],
   "scripts": {
     "build": "tsc",
+    "build-tests": "tsc -p \"./tests/fixtures/tsconfig.json\"",
     "format": "prettier --write \"{src,tests}/**/*.{js,ts}\"",
-    "prebuild": "rm -rf lib",
     "release:major": "npm version major && npm publish",
     "release:minor": "npm version minor && npm publish",
     "release:patch": "npm version patch && npm publish",
     "test": "jest"
   },
+  "jest": {
+    "preset": "ts-jest",
+    "testEnvironment": "node",
+    "testMatch": [
+      "**/tests/main.test.ts"
+    ]
+  },
   "devDependencies": {
     "@types/jest": "^26.0.15",
     "@types/node": "^14.14.6",
-    "jest": "^26.6.1",
+    "jest": "^24.9.0",
     "prettier": "^2.1.2",
     "ts-expose-internals": "^4.0.5",
-    "ts-jest": "^26.4.3",
+    "ts-jest": "^24.3.0",
     "ts-node": "^9.0.0",
     "ttypescript": "^1.5.12",
     "typescript": "^4.0.5"
